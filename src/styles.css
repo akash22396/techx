@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+/* Navbar Start */
+.head-nav{
+  background-color: rgb(136, 36, 230);
+  color: white;
+  box-shadow: 0px -2px 20px rgba(136, 36, 230, 0.5);
+}
+.bg-blueviolet{
+  background-color: blueviolet;
+}
+.head-nav .nav-link{
+  color: white;
+}
+.text-bold{
+  font-weight: bold;
+}
+@media screen and (max-width:1024px){
+  #nav{
+    border-top: 1px solid white;
+    margin-top: 1px;
+  }
+
+}
+@media screen and (max-width:768px){
+  #nav{
+    border-top: 1px solid white;
+    margin-top: 1px;
+  }
+
+}
+/* Navbar End */
