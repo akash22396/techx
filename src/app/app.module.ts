@@ -9,6 +9,15 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { PhotoComponent } from './photo/photo.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
+import { AdminComponent } from './admin/admin.component';
+import { ProductAddComponent } from './admin/product-add/product-add.component';
+import { ProductListComponent } from './admin/product-list/product-list.component';
+import { ProductUpdateComponent } from './admin/product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +26,21 @@ import { PhotoComponent } from './photo/photo.component';
     FooterComponent,
     HomeComponent,
     ErrorComponent,
-    PhotoComponent
+    PhotoComponent,
+    AboutusComponent,
+    ContactusComponent,
+    ProductsComponent,
+    ProductComponent,
+    AdminComponent,
+    ProductAddComponent,
+    ProductListComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,42 @@
+<section class="products ">
+    <div class='page-heading mx-auto' ><h4 class='text-center text-uppercase text-white'>Products</h4></div>
+
+   </section>
+<section class="">
+  <div class="container py-3 ">
+    <div class="row">
+      <!--<div class="col-md-3 py-2  text-center  p-home" *ngFor='let p of products | slice: 0:50'>
+        <div class=" bg-light mt-3 p-2">
+          <div>
+            <img src='{{ p.url }}' class='img-fluid'>
+            <a routerLink='/Product/{{ p.id }}'>{{ p.title }}</a>
+          </div>
+
+
+        </div>
+      </div>-->
+      <div class='col-md-12 bg-light'>
+        <table class='table table-sm'>
+          <thead>
+            <tr class='thead-dark'>
+                <th>Company</th>
+              <th>Emp Id</th>
+              <th>Emp NAme</th>
+              <th>GENDER</th>
+              <th>PHONE_NO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let p of products | slice : 0:10'>
+              <td>{{p.CMP_CD}}</td>
+              <td>{{p.EMP_ID}}</td>
+              <td>{{p.EMP_NAME}}</td>
+              <td>{{p.GENDER}}</td>
+              <td>{{p.PHONE_NO}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

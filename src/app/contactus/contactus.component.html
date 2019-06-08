@@ -1,0 +1,55 @@
+<section class="contact ">
+    <div class='page-heading mx-auto' ><h4 class='text-center text-uppercase text-white'>contact us</h4></div>
+
+   </section>
+
+   <section class="bg-white">
+     <div class="container pt-3 ">
+       <div class="row">
+         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 py-2">
+           <img src='../../assets/1.jpg' class='img-thumbnail'>
+         </div>
+         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 py-2">
+           <h4 class='text-uppercase pt-2'><span class='bd-btm'>Contact Us</span></h4>
+   <p class='text-justify pt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas magni magnam reprehenderit dicta impedit molestiae at praesentium ullam odio nihil placeat sapiente, officiis quisquam laborum nam quis! Tenetur, molestias necessitatibus!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum debitis quisquam facere suscipit, harum laborum omnis, aut iste a, et impedit nihil illo natus eligendi dolor autem expedita laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut eius, iusto consequatur alias nostrum iste consequuntur delectus rerum corporis ullam dolore ex deserunt, accusantium amet dolor dignissimos atque cumque.</p>
+
+         </div>
+
+           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 py-2">
+               <h4 class='text-uppercase pt-2 text-center'><span class='text-voilet '>Contact Us</span></h4>
+               <div class='divider1 text-center '>
+                  <div class='divider2'>
+                    </div>
+              </div>
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" >
+<div class="form-group">
+  <label for="">Full Name</label>
+  <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" formControlName="name" aria-describedby="helpId" >
+  <small id="helpId" class="text-danger  help-block" *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched">Please Enter your Name!</small>
+</div>
+<div class="form-group">
+    <label for="">Email</label>
+    <input type="text" name="email" id="email" class="form-control" placeholder="Email" formControlName="email" aria-describedby="helpId" >
+    <small id="helpId" class="  help-block text-danger" *ngIf="!contactForm.get('email').valid && contactForm.get('email').touched">Enter your Email!</small>
+  </div>
+  <div class="form-group">
+      <label for="">Number</label>
+      <input type="number" name="c_no" id="c_no" class="form-control" placeholder="Contact No" formControlName="c_no" aria-describedby="helpId" >
+      <small id="helpId" class="  help-block text-danger" *ngIf="!contactForm.get('c_no').valid && contactForm.get('c_no').touched">Enter your contact no!</small>
+    </div>
+    <div class="form-group">
+        <label for="">Message</label>
+        <textarea type="text" name="msg" id="msg" class="form-control" placeholder="Message.." formControlName="msg" aria-describedby="helpId" ></textarea>
+        <small id="helpId" class="  help-block text-danger" *ngIf="!contactForm.get('msg').valid && contactForm.get('msg').touched">Enter your message!</small>
+      </div>
+  <div class="text-danger" *ngIf="!contactForm.valid && contactForm.touched" >Please fill above details!</div>
+  <button class='btn btn-danger' type='submit'>Submit</button>
+                    </form>
+
+                    <!-- {{name}} ||
+                    {{email}} -->
+           </div>
+
+       </div>
+     </div>
+   </section>

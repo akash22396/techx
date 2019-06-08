@@ -4,16 +4,52 @@ body{
 background-color: #eceff1
 }
 .head-nav{
-  background-color: rgb(136, 36, 230);
-  color: white;
-  box-shadow: 0px -2px 20px rgba(136, 36, 230, 0.5);
+  background-color: white;
+  color: rgb(136, 36, 230);
+  /* box-shadow: 0px -4px 20px rgba(136, 36, 230, 0.5); */
+  -webkit-box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.76);
+-moz-box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.76);
+box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.76);
 }
 .bg-blueviolet{
   background-color: blueviolet;
 }
-.head-nav .nav-link{
-  color: white;
+.text-voilet{
+  color: blueviolet;
 }
+.navbar-brand:hover{
+  color: blueviolet;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-size: 28px;
+}
+.actv{
+  border-bottom: 3px solid rgb(136, 36, 230) !important;
+}
+.head-nav .nav-link{
+  /* color: white; */
+
+  transition: 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(136, 36, 230);
+  border-bottom: 3px solid white;
+  /* border-top: 3px solid white; */
+  padding: 10px 0;
+  margin: 0 10px;
+  /* transition: all 5ms; */
+}
+.head-nav .nav-link:hover{
+
+
+  border-bottom: 3px solid rgb(136, 36, 230);
+  /* border-top: 3px solid rgb(136, 36, 230); */
+  /* padding: 6px 0; */
+
+}
+
+
 .text-bold{
   font-weight: bold;
 }
@@ -96,6 +132,23 @@ font-weight: bold;
 text-align: center;
 margin-left: 30%;
 margin-right: 30%;
+
+}
+.tst-text{
+
+}
+.tst-b{
+  height: 350px;
+  color: white;
+}
+.tst-m{
+
+    /* height: calc(100% - 51px); */
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url('./assets/1.jpg');
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .divider2{

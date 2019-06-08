@@ -8,9 +8,9 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./photo.component.css']
 })
 export class PhotoComponent implements OnInit {
-photo: any;
+photo: any =[];
   constructor(public datas:DataserviceService, private route: ActivatedRoute, private router: Router) { }
-
+url :string;
   ngOnInit() {
     this.datas.getPhoto(this.route.snapshot.params['id']).subscribe((data: {}) => {
       console.log(data);

@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
 
 const urlApi = 'https://jsonplaceholder.typicode.com/photos';
+const urlApi2 = 'http://localhost:8000/users';
 //https://jsonplaceholder.typicode.com/albums
 const httpOptions = {
   headers: new HttpHeaders(
@@ -30,6 +31,15 @@ export class DataserviceService {
 
   getPhoto(id): Observable<any> {
     return this.http.get(urlApi + '/' + id).pipe(
+      map(this.extractData));
+  }
+  getEmpList(): Observable<any> {
+    return this.http.get(urlApi2 ).pipe(
+      map(this.extractData));
+  }
+
+  getEmp(id): Observable<any> {
+    return this.http.get(urlApi2 + '/' + id).pipe(
       map(this.extractData));
   }
 

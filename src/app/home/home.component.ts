@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
   photos:any = [];
 
   constructor(public datas: DataserviceService, private route: ActivatedRoute, private router: Router) { }
-
+ id : number;
+ url: string;
   ngOnInit() {
     this.getPhotos();
   }

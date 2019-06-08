@@ -1,22 +1,25 @@
-<nav class="navbar navbar-expand-lg head-nav sticky-top">
-  <a class='navbar-brand text-white ' [routerLink]="['/Home']"> Logo</a>
-  <button class='navbar-toggler ' type='button' data-toggle="collapse" data-target='#nav' ><i class="fa fa-bars text-white"></i></button>
-<div class='collapse navbar-collapse' id='nav'>
-  <ul class='navbar-nav ml-auto p-2 '>
-   <li class="nav-item "><a [routerLink]="['/Home']" routerLinkActive="router-link-active"  class="nav-link active ">Home</a></li>
-   <li class="nav-item"><a routerLink="/About" class="nav-link ">About</a></li>
-   <li class="nav-item"><a routerLink="/Contact" class="nav-link ">Contact</a></li>
-   <li class="nav-item dropdown  "><a routerLink="/Products" class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="#drop" >Products</a>
-    <div class="dropdown-menu dropdown-menu-lg-right ">
-        <a class="dropdown-item"  routerLink="/Products">Products</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
+
+<section class="sticky-top" >
+    <nav class="navbar navbar-expand-lg head-nav ">
+        <a class='navbar-brand text-voilet ' [routerLink]="['/Home']"> Logo</a>
+        <button class='navbar-toggler ' type='button' data-toggle="collapse" data-target='#nav' ><i class="fa fa-bars text-white"></i></button>
+      <div class='collapse navbar-collapse' id='nav'>
+        <ul class='navbar-nav ml-auto p-2 '>
+         <li class="nav-item "><a [routerLink]="['/Home']" routerLinkActive="router-link-active"  class="nav-link active actv ">Home</a></li>
+         <li class="nav-item dropdown  "><a routerLink="/Products" class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="#drop" >Products</a>
+          <div class="dropdown-menu dropdown-menu-lg-right ">
+              <a class="dropdown-item"  routerLink="/">Product 1</a>
+              <a class="dropdown-item" routerLink="/">Another action</a>
+              <a class="dropdown-item" routerLink="/">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/Products">All Products</a>
+            </div>
+
+        </li>
+         <li class="nav-item"><a routerLink="/About" class="nav-link ">About</a></li>
+         <li class="nav-item"><a routerLink="/Contact" class="nav-link ">Contact</a></li>
+
+        </ul>
       </div>
-
-  </li>
-  </ul>
-</div>
-</nav>
-
+      </nav>
+</section>

@@ -1,0 +1,17 @@
+.products{
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url('../../assets/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.page-heading{
+  top:90px;
+  position: relative;
+}
+.bd-btm{
+  color:  rgb(136, 36, 230);
+  padding: 5px 0;
+  border-bottom: 2px solid rgb(136, 36, 230);
+}
